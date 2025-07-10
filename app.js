@@ -11,4 +11,6 @@ app.set('view engine', 'pug');
 app.use(express.urlencoded({ extended: true }));
 app.use('/', routes);
 
+app.use(express.static('public'));
+
 module.exports = app; 
